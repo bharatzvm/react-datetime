@@ -1,10 +1,17 @@
 module.exports = {
     "env": {
-        "browser": true
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "mocha": true
     },
+    "parserOptions": {
+        "sourceType": "module"
+    }
     "globals": {
         "require": true,
-        "module": true
+        "module": true,
+        "__dirname": true
     },
     // Enables rules that report common problems,
     // see http://eslint.org/docs/rules/ for list
